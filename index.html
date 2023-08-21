@@ -11,14 +11,14 @@
             background-size: 100% 100%;
         }
         .moveImage{
-            animation: 7s infinite linear movecompany;
+            animation: 10s movecompany infinite linear ;
         }
         @keyframes movecompany{
             0%{
-                margin-top:0;
+                transform: translateY(0);
             }
             100%{
-                margin-top:-100%;        
+                transform: translateY(-100%);
             }
         }
         @media screen {
@@ -1072,8 +1072,12 @@
             <div class="relative overflow-y-hidden max-w-[500px] h-[500px]">
                 <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
                  class="absolute w-full h-[150px] top-0 z-[51]"></div>
-                <img src="./images/comanies.png" alt="" loading="lazy"
-                class="moveImage" >
+                <div class="w-full">
+                    <img src="./images/comanies.png" alt="" loading="lazy"
+                    class="moveImage" >
+                    <img src="./images/comanies.png" alt="" loading="lazy"
+                    class="moveImage" >
+                </div>
                 <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)" 
                 class="absolute w-full h-[150px] bottom-0 z-[50]"></div>
             </div>
